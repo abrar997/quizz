@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+
+    <!--quiz box  -->
+    <div class="question form" id="questionquiz">
+        <div class="heraderh1">
+            
+            <!--queston -->
+            <h1 id="heraderh1"></h1>
+                <!-- list of choices  -->
+            <ul>
+
+                <!-- choise (radio && label) -->
+
+                <li><input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a-answer">question</label>
+                </li>
+
+                <!-- choise (radio && label) -->
+
+                <li><input type="radio" id="b" class="answer" name="answer">
+                    <label for="a" id="b_answer">question</label>
+
+                </li>
+
+
+                <!-- choise (radio && label) -->
+
+                <li><input type="radio" id="c" class="answer" name="answer">
+                    <label for="a" id="c_answer">question</label>
+
+                </li>
+
+                <!-- choise (radio && label) -->
+                <li><input type="radio" id="d" class="answer" name="answer">
+                    <label for="a" id="d_answer">question</label>
+
+                </li>
+
+            </ul>
+            <!-- submit -->
+            <input type="submit" value="next" id="submit">
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- header of timer -->
+    <div class="clock" id="clock">
+        <h3 id="h333">you have one minute to send your answer</h3>
+    </div>
+    <div class="timer" id="countDown">
+        01:00
+    </div>
+
+    <!-- button to start quiz -->
+    <button id="startbutton" class="btn-start" onclick="startTime()">start your quiz</button>
+
+
+
+    <script src="1.js"></script>
+</body>
+
+</html>
