@@ -35,7 +35,7 @@ body{background-color:rgb(238, 238, 238);
 
 
 /* ul  */
-.form ul{margin-top: 60px;
+.form ul{margin-top: 40px;
     list-style-type: none;
     margin-left: 10px;
 }
@@ -59,7 +59,8 @@ body{background-color:rgb(238, 238, 238);
     border-radius:1%;
     text-transform: capitalize;
     border-radius: 5px;
-    outline:none
+    outline:none;
+    margin: auto;
 }
 
 /* submit hover */

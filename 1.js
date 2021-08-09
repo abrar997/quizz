@@ -155,14 +155,15 @@ function startTime() {
     time = time < 0 ? 0 : time;
     downMinute.innerHTML = `${minute}: ${second} `;
     time--;
-    if (minute == "0" && second=="0" ){
-   
-        alert("your time is over and your score=0 ");
-       
-            
+    if (minute == "0" && second == "0") {
 
-        }
+        alert("your time is over and your score=0 ");
+
+        window.location.reload();
+
+
     }
+}
 
 
 
@@ -190,7 +191,7 @@ function startquize() {
 
     setInterval(startTime, 1000);  //call function every second
 
-    
+
 
 }
 
@@ -271,30 +272,30 @@ function deleteChoiceSelected() {
 
 sumbitbtn.addEventListener('click', () => {  //arrow function 
     var choices = selectAnswer();
-    if(choices!=undefined){
-    if (choices === html5question[currentquestion].correct) {  //if you have html5question[currentquestion].correct = choice that you select it  ,,,,, currentquestion=0
-        //So,
-        score++ //increase score
-    }
-    currentquestion++ //go to next slide in any state if the answer is true or false
+    if (choices != undefined) {
+        if (choices === html5question[currentquestion].correct) {  //if you have html5question[currentquestion].correct = choice that you select it  ,,,,, currentquestion=0
+            //So,
+            score++ //increase score
+        }
+        currentquestion++ //go to next slide in any state if the answer is true or false
 
 
-    if (currentquestion < html5question.length) { //of course will be less then 1 
-        showQuestionAndAnanswer()    // go to next slide //first function 
-    }
+        if (currentquestion < html5question.length) { //of course will be less then 1 
+            showQuestionAndAnanswer()    // go to next slide //first function 
+        }
 
 
-    else {
+        else {
 
-        questioncontainer.innerHTML = `
+            questioncontainer.innerHTML = `
         <h2 class="headerjs"> you answered correctly at <span> ${score}/${html5question.length} </span>question </h2>
         <button class="btnjs" onclick="location.reload()">Reload </button> 
         `
 
+        }
+
+
     }
-
-
-}
 })
 
 
